@@ -1,10 +1,10 @@
-from norm import norma
+from norm import minimum
 
 fnumber1 = {(0.3, 1), (1, 2)}
 fnumber2 = {(1, 1)}
 
 
-def dodawanieLiczbRozmytych(liczba1, liczba2, norma):
+def addition(liczba1, liczba2, norma):
     z = set()
     for x in liczba1:
         for y in liczba2:
@@ -16,4 +16,4 @@ def dodawanieLiczbRozmytych(liczba1, liczba2, norma):
     print(z)
 
 
-dodawanieLiczbRozmytych(fnumber1, fnumber2, norma)
+addition(fnumber1, fnumber2, minimum)
