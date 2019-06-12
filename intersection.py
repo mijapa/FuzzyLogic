@@ -12,7 +12,7 @@ def intersection(set_1, set_2, norm):
         for y in set_2:
             if x[1] == y[1]:
                 out_set.add(norm(x, y))
-    print("z: {}".format(out_set))
+    print("intersection set make from repeating elements: {}".format(out_set))
 
     def lookForLeft(set, outSet):
         for x in set:
@@ -20,9 +20,10 @@ def intersection(set_1, set_2, norm):
             for y in outSet:
                 if x[1] == y[1]:
                     contains = 1
-                    print("contains")
+                    # print("contains")
             if contains == 0:
-                minnorm = (0, x[1])  # TODO: change for proper norm
+                minnorm = (0, x[
+                    1])  # TODO: change for proper norm, this line works only for min norm, for max norm it schould add (1, x[1])
                 print("add minnorm: {}".format(minnorm))
                 outSet.add(minnorm)
 
